@@ -313,6 +313,7 @@ public class c5_CreatingSequence {
             for (int i = 0; i < 100; i++) {
                 int finalI = i;
                 new Thread(() -> {
+                    //System.out.println("Thread name: " + Thread.currentThread().getName());
                     if (finalI %10 == 0)
                         try {
                             Thread.sleep(200);
